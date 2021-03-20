@@ -1,10 +1,17 @@
-# 解説  
+aaaを利用して、全てのユーザーの名前だけが出力されるようにRubyでコーディングしてください。  
   
-aaa = [
+  aaa = [
   {user: {profile: {name: 'ayumu'}}},  
   {user: {profile: {name: 'yuuma'}}},  
   {user: {profile: {name: 'hirosi'}}},  
- ]  
+  ]  
+  
+  出力結果  
+    ayumu  
+    yuuma  
+    hirosi  
+  
+# 解説  
   
 二重ハッシュから特定の値を取得する場合は、取得したい値のキーまで連続して指定すると取得できます。  
   
