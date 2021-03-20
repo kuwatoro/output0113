@@ -2,7 +2,7 @@
   
 ruby_mondaisyuuの中に今まで学習した問題と自分なりに回答を解説したファイルがあります。  
   
-ruby問題  
+ruby問題正解の記述  
 ruby_○.rb  
   
 解説  
