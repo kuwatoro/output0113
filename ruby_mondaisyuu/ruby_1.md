@@ -1,3 +1,5 @@
+# 問題  
+  
 puts aaa.keys  
 puts aaa.values  
 上記のメソッドを実行した時に  

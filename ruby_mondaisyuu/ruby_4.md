@@ -1,3 +1,5 @@
+# 問題
+  
 class Article  
   
   def initialize(author, title, content)  
@@ -56,3 +58,4 @@ puts "タイトル: #{aaa.title}"
 puts "本文: #{aaa.content}"  
   
 最後に、メソッドを呼び出します。  
+答えのソースコードは ruby_4.rb にあります。  
