@@ -1,42 +1,27 @@
-# 解説  
+# 問題  
+名前を入力する機能を作成しましょう。  
+名前以外にピリオド(.)や空白があるとエラーを表示させます。  
   
-④def name(aaa)  
-  ⑤if aaa.include?(" ")  
-    puts "!エラー!空白は登録できません"  
-  ⑤elsif aaa.include?(".")  
-    puts "!エラー!記号は登録できません"  
-  ⑥else  
-    puts "登録が完了しました"  
-  end  
-end  
+出力例：  
+登録したい名前を入力してください(例)TanakaTaro  
   
-①puts "登録したい名前を入力してください"  
-②aaa = gets  
-③name(aaa)  
+TanakaTaro → 登録が完了しました  
+Tanaka.Taro→!エラー!記号は登録できません  
+Tanaka Taro → !エラー!空白は登録できません  
   
-①puts "登録したい名前を入力してください"  
-最初にターミナルで何をして欲しいか表示させます。  
+# ヒント  
+include?メソッドを使いましょう。  
   
-②aaa = gets  
-次に getsメソッド で文字を入力させ、 aaa変数に代入します。  
+include?  
+include?メソッドは指定した要素が、配列や文字列内に含まれているかを判定するメソッドです。  
   
-③name(aaa)  
-nameメソッドを呼び出すために aaa変数を実引数としてセットします。  
+Arrayのinclude?メソッドを使用する場合  
+Stringのinclude?メソッドを使用する場合  
   
-④def name(aaa)  
-実引数としてセットした aaa変数を受け取ります。  
+daikonn = ["kuki", "umai"]  
   
-⑤if aaa.include?(" ")  
-  puts "!エラー!空白は登録できません"  
-⑤elsif aaa.include?(".")  
-  puts "!エラー!記号は登録できません"  
-引数aaaで受け取った文字列に対してinclude?メソッドを使用します。  
-”.”(ピリオド)と” ”(空白)がないか判断します。  
+puts daikonn.include?("kuki")  
+ => true  
   
-⑥else  
-    puts "登録が完了しました"  
-”.”(ピリオド)と” ”(空白)がなかった場合登録ができるので、  
-問題なければこのように表示させます。  
-
-if文は条件が当てはまった時点で処理が終了します。  
-そのため、ピリオドや空白があるかどうかという条件式を先に記述しましょう。  
+puts daikonn.include?("hoge")  
+ => false  
