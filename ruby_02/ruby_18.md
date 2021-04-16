@@ -9,10 +9,10 @@ aとb二人の容疑者の取り調べをしています。
 * aとbどちらの証言も偽であれば、Trueを出力  
 * aとbで証言の真偽が一致しない場合であれば、Falseを出力  
   
-### 呼び出し方：  
+## 呼び出し方：  
 police_trouble(a, b)  
   
-### 出力例：
+## 出力例：
 police_trouble(true, false) → False  
 police_trouble(false, false) → True  
 police_trouble(true, true) → True  
@@ -23,11 +23,11 @@ police_trouble(true, true) → True
 論理演算子&&、||、!を使います。  
 以下のように使用します。  
   
-## aもbもtrueの場合にtrue  
+### aもbもtrueの場合にtrue  
 a && b  
   
-## aかbのどちらかがtrueの場合にtrue  
+### aかbのどちらかがtrueの場合にtrue  
 a || b  
   
-## aがtrueの場合にfalse、aがfalseの場合にtrue  
+### aがtrueの場合にfalse、aがfalseの場合にtrue  
 !a  
